@@ -1,7 +1,149 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+html {
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  position: relative;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  position: absolute;
+  padding: 1.5rem;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 1rem;
+  max-width: 20.5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.blocker {
+  position: relative;
+  opacity: 0;
+  height: 100%;
+}
+
+.blocker-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.blocker:hover {
+  background-color: hsla(178, 100%, 50%, 0.5);
+  opacity: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.pb-1 {
+  padding-bottom: 1rem;
+}
+
+.border-btm {
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+.center-y {
+  align-items: center;
+}
+
+.icon {
+  margin-right: 0.5rem;
+}
+
+.teal {
+  color: hsl(178, 100%, 50%);
+}
+
+.purple {
+  color: hsl(215, 51%, 70%);
+}
+
+.white {
+  color: white;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.hover-teal:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.hero-img {
+  width: 17.5rem;
+  height: 17.5rem;
+  background-image: url('./images/image-equilibrium.jpg');
+  background-size: contain;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.avatar {
+  height: 2rem;
+  margin-right: 1rem;
+  border: 1px solid white;
+  border-radius: 100px;
+}
+
 .attribution {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 100%;
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(178, 100%, 50%);
 }
